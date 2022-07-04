@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+
+    <meta charset="UTF-8">
+    <title>Jazdci smrti - autorka série Baránková</title>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Babylonica&family=Charm&family=Lavishly+Yours&family=Merienda&family=Ruthie&family=Tangerine&display=swap" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/430b36cec8.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+
+
+    <nav>
+        <label class="logo">Michala Baránková</label>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact-page.html">Contact</a></li>
+            <li><a href="books.html">Books</a></li>
+        </ul>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+    <p class="vitajte">Vitajte na web stránke autora</p>
+    <h1>Michala Baránková</h1>
+    <div id="container">
+        <img src="moja-fotka.jpg" alt="fotka Michala Baránková"/>
+        <p class="text">
+            Písaniu fantasy príbehov som sa začala venovať, 
+            keď som ešte chodila na strednú školu. 
+            V tom čase som veľa pozerala japonské príbehy, 
+            ktoré ma svojím dejom natoľko 
+            fascinovali, že som chcela podobný príbeh napísať tiež. 
+            Samozrejme ma inšpirovali aj 
+            zahraničné autorky, ako sú J.K.Rowlingová alebo Sarah J.Mass. 
+            Ale väčšinu situácií som 
+            čerpala práve z japonských príbehov. 
+            <br> <br> Moja predstavivosť bola taká rozsiahla, že som nedokázala vyrozprávať 
+            príbeh na jednu knihu. Musela sa skladať z viacerých častí, až z toho boli 
+            nakoniec lógie :D Dúfam, že sa s Vami podelím aj s inými príbehmi, ktoré mám 
+            premyslené, pretože, to mi verte, je ich dosť ;-)
+        </p>
+        </div>
+        <hr>
+        <p class="zaciatky">Moje najlepšie začiatky</p>
+        <h1 class="wattpad">Wattpad</h1>
+        <div class="ocenenie">
+            <div class="hviezda">
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <ul>
+                <li>1. miesto</li>
+                <li>1. miesto</li>
+                <li>1. miesto</li>
+            </ul>
+        </div>
+        <hr>
+            <p class="recenzie">Recenzie</p>
+            <p class="recenzie_2">Toto sú recenzie od milovníkov príbehu série Jazdcov smrti.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">"Ahojjj. Ja som sa len chcela spýtať ako to ide s knihou Jazdni smrti, pretože sa na ňu s kamarátkou strašne tešíme a sme nedočkavé." <br>- veronicka647</div>
+                    <div class="swiper-slide">"Fuuha, tak dúfam že na Jazdcov nezabudnem, ale ako by som mohla na taky úžasný príbeh zabudnúť, 
+                        no v každom prípade gratulujem<br> že sa ti to splnilo, si úžasná autorka, a ešte Šťastné a Vesele Vianoce." <br>- nata894</div>
+                    <div class="swiper-slide">"Milujem tento príbeh ❤️, nemôžem sa dočkať kedy bude v knižnej podobe." <br>- Sabinaqeen </div>
+                    <div class="swiper-slide">"Som tak odvarená z tohto príbehu, že iba nad ním rozmýšľam a asi ho idem aj ešte raz prečítať naozaj milujem hoooooo." <br>- Bts_army_love_73</div>
+                    <!-- <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div> -->
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                </div>
+
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    });
+        </script>
+        <hr>
+
+        
+    <div id="footer">
+        <p class="copyright">
+            Copyright &copy <a href="contact-page.html">Michala Baránková</a> 
+            2022. Designed by Michala Baránková
+
+        </p>
+    </div>
+<!-- <section></section> -->
+</body>
+</html>
