@@ -1,118 +1,186 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-
-
     <meta charset="UTF-8">
-    <title>Jazdci smrti - autorka série Baránková</title>
-    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Babylonica&family=Charm&family=Lavishly+Yours&family=Merienda&family=Ruthie&family=Tangerine&display=swap" rel="stylesheet"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="style.css">
+    <title>Autorka série Jazdci smrti - Baránková</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Charm&family=Lavishly+Yours&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/430b36cec8.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#icon').click(function(){
-                $('ul').toggleClass('show');
-            });
-        });
-    </script>
-
-
+    <script>   
+        function welcome() {   
+            window.open("https://www.martinus.sk/?uItem=1751211");  
+        }function wattpad() {
+            window.open("https://www.wattpad.com/user/Zmokrk");
+        }function instagram() {
+            window.open("https://www.instagram.com/michala.barankova_autor/");
+        }function martinus() {
+            window.open("https://www.martinus.sk/?uItem=1751211");
+        }function uniknihy() {
+            window.open("https://www.uniknihy.sk/produkt/jazdci-smrti-i-bic-z-ohna/");
+        }function gorila() {
+            window.open("https://www.gorila.sk/detail/1751211/Jazdci-smrti-I-Bic-z-ohna");
+        }function bux() {
+            window.open("https://www.bux.sk/knihy/688907-jazdci-smrti-i-bic-z-ohna.html");
+        }function mojeknihy() {
+            window.open("https://moje-knihy.sk/produkt/jazdci-smrti-i-bic-z-ohna/");
+        }function oknihe () {
+            window.open("bic-z-ohna.html")
+        }
+    </script>   
 </head>
 <body>
-
-
-    <nav>
-        <label class="logo">Michala Baránková</label>
-        <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact-page.html">Contact</a></li>
-            <li><a href="books.html">Books</a></li>
-        </ul>
-        <label id="icon">
-            <i class="fas fa-bars"></i>
-        </label>
-    </nav>
-    <p class="vitajte">Vitajte na web stránke autora</p>
-    <h1>Michala Baránková</h1>
-    <div id="container">
-        <img src="moja-fotka.jpg" alt="fotka Michala Baránková"/>
-        <p class="text">
-            Písaniu fantasy príbehov som sa začala venovať, 
-            keď som ešte chodila na strednú školu. 
-            V tom čase som veľa pozerala japonské príbehy, 
-            ktoré ma svojím dejom natoľko 
-            fascinovali, že som chcela podobný príbeh napísať tiež. 
-            Samozrejme ma inšpirovali aj 
-            zahraničné autorky, ako sú J.K.Rowlingová alebo Sarah J.Mass. 
-            Ale väčšinu situácií som 
-            čerpala práve z japonských príbehov. 
-            <br> <br> Moja predstavivosť bola taká rozsiahla, že som nedokázala vyrozprávať 
-            príbeh na jednu knihu. Musela sa skladať z viacerých častí, až z toho boli 
-            nakoniec lógie :D Dúfam, že sa s Vami podelím aj s inými príbehmi, ktoré mám 
-            premyslené, pretože, to mi verte, je ich dosť ;-)
-        </p>
-        </div>
-        <hr>
-        <p class="zaciatky">Moje najlepšie začiatky</p>
-        <h1 class="wattpad">Wattpad</h1>
-        <div class="ocenenie">
-            <div class="hviezda">
-                <i class="fa-regular fa-star"></i>
+    <!-- toto je nav bar - hlavné menu hore na stránke -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpg" alt="ornament use from Vecteezy.com">
             </div>
-            <ul>
-                <li>1. miesto</li>
-                <li>1. miesto</li>
-                <li>1. miesto</li>
+            <ul class="menu">
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="about.html">O mne</a></li>
+                <li><a href="books.html">Knihy</a>
+                    <ul class="submenu">
+                        <li><a href="jazdci-smrti.html">Jazdci smrti</a>
+                            <ul class="submenu2">
+                                <li><a href="bic-z-ohna.html">Bič z ohňa</a></li>
+                                <!-- <li><a href="#">Luk zničenia</a></li>
+                                <li><a href="#">Štít krutosti</a></li>
+                                <li><a href="#">Meč smrti</a></li>
+                                <li><a href="#">Piaty jazdec</a></li>
+                                <li><a href="#">Nástroje moci</a></li> -->
+                            </ul>
+                        </li>
+                        <!-- <li><a href="#">Nenávidená zradkyňa</a>
+                            <ul class="submenu2">
+                                <li><a href="#">Aldsea</a></li>
+                                <li><a href="#">Dohoda</a></li>
+                                <li><a href="#">Sľub</a></li>
+                                <li><a href="#">Spojenectvo</a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </li>
+                <li><a href="contact.html">Kontakt</a></li>
+            <span class="btn" type="button" onClick="welcome()"><a class="active" href="#">BUY HERE</a>
+            </span>  
+        </ul>
+    </nav>
+    </header>
+    <!-- tu začína prvá časť body, prvá fotka -->
+
+    <section class="about">
+        <div class="main">
+            <img src="hlavne.jpg" alt="prvá fotka knihy">
+            <div class="about-text">
+                <h2>JAZDCI SMRTI I.</h2>
+                <h5>Bič z ohňa</h5>
+                <p>
+                    Nová fantasy séria plná dobrodružstva, tajomstiev a klamstva.
+                    <br><br>Zdĺhavá a nebezpečná cesta hlavnej hrdinky,
+                    <br>ktorá je pripravená klamať celému svetu, aby dosiahla vytúženú slobodu. 
+                </p>
+                <div class="kniha">
+                    <button class="button" onClick="oknihe()">O KNIHE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--tu začína druhý obrázok na hlavnej stránke pod prvým-->
+
+    <section class="druhe" id="druhe">
+        <div class="heading">
+            <img src="novinka.jpg" alt="ornament use from Vecteezy.com">
+        </div>
+        <!-- <h1 class="heading"><span>NOVINKA</span></h1> -->
+        <div class="row">
+            <div class="image2">
+                <img src="fotka.jpg" alt="druhá fotka knihy" align= "right">
+            </div>
+        </div>
+        <div class="content">
+            <h3>Bič z ohňa</h3>
+            <h4>„Moja túžba po slobode bola však väčšia ako vlastný život.“</h4>
+            <p>Za noci hustého dažďa a bleskov sa zjavil 
+                vír plný mágie a čarov, 
+                ktorý svojou silou siahal až k nebesiam. Krajinami sa 
+                ozývali strašlivé zvuky a vyzeralo to, 
+                akoby nariekala samotná zem. A potom nastalo ticho. 
+                Magický vír zmizol a vstrebal sa do zbraní, ktoré mali 
+                zmeniť priebeh nekončiacej vojny medzi krajinami. 
+                Vojnu, ktorú privolali samotní králi, túžiaci iba po moci. 
+                Mágia sa zmenila a tí, ktorí ju ovládali, spolu s ňou. 
+                <br><br>Nastala nová doba, kde už zmenené nebolo naspäť navrátené. 
+                Táto doba stvorila bojovníčku, mocnú Nevaeh, 
+                ktorá túžila utiecť od bojov a všetkého, čo kedy poznala. 
+                Na ceste za slobodou sa však stretáva s nepoznanými tajomstvami, 
+                ktoré sa ukázali byť nebezpečnejšie, než si kto myslel. 
+                Prijme spolu s ďalšími udatnými bojovníkmi úlohu a 
+                zastaví svet pred úplnou skazou?
+            </p>
+            <a href="#" class="button" onClick="welcome()">Kúpiť tu</a>
+        </div>
+    </section>
+
+<!-- tu sa začína tretia časť, kde budú logá firiem -->
+<div class="container">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide" onClick="gorila()"><img src="gorila.jpg"></div>
+        <div class="swiper-slide" onClick="martinus()"><img src="martinus.jpg"></div>
+        <div class="swiper-slide" onClick="bux()"><img src="bux.jpg"></div>
+        <div class="swiper-slide"><img src="ibookstore.jpg"></div>
+        <div class="swiper-slide" onClick="mojeknihy()"><img src="moje-knihy.jpg"></div>
+        <div class="swiper-slide" onClick="uniknihy()"><img src="uniknihy.jpg"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
+<!-- tu sa začína footer -->
+    <footer>
+        <div class="footer-content">
+                    
+            <p>Ste pripravení na <br><br>dobrodružstvá plné tajomstiev?</p>
+            <ul class="socials">
+                <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li> -->
+                <!-- <li><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
+                <li><a href="#" onClick="instagram()"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#" onClick="wattpad()"><img src="wattpad.png" alt="Wattpad Logo"/></a></li>
             </ul>
         </div>
-        <hr>
-            <p class="recenzie">Recenzie</p>
-            <p class="recenzie_2">Toto sú recenzie od milovníkov príbehu série Jazdcov smrti.</p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">"Ahojjj. Ja som sa len chcela spýtať ako to ide s knihou Jazdni smrti, pretože sa na ňu s kamarátkou strašne tešíme a sme nedočkavé." <br>- veronicka647</div>
-                    <div class="swiper-slide">"Fuuha, tak dúfam že na Jazdcov nezabudnem, ale ako by som mohla na taky úžasný príbeh zabudnúť, 
-                        no v každom prípade gratulujem<br> že sa ti to splnilo, si úžasná autorka, a ešte Šťastné a Vesele Vianoce." <br>- nata894</div>
-                    <div class="swiper-slide">"Milujem tento príbeh ❤️, nemôžem sa dočkať kedy bude v knižnej podobe." <br>- Sabinaqeen </div>
-                    <div class="swiper-slide">"Som tak odvarená z tohto príbehu, že iba nad ním rozmýšľam a asi ho idem aj ešte raz prečítať naozaj milujem hoooooo." <br>- Bts_army_love_73</div>
-                    <!-- <div class="swiper-slide">Slide 5</div>
-                    <div class="swiper-slide">Slide 6</div>
-                    <div class="swiper-slide">Slide 7</div>
-                    <div class="swiper-slide">Slide 8</div>
-                    <div class="swiper-slide">Slide 9</div> -->
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                </div>
+        <div class="footer-bottom">
+            <p>copyright &copy; 2022 Michala Baránková. designed by <span>Michala Baránková</span></p>
+        </div>
+    </footer>
 
-                <script>
-                    var swiper = new Swiper(".mySwiper", {
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
-                    });
-        </script>
-        <hr>
-
-        
-    <div id="footer">
-        <p class="copyright">
-            Copyright &copy <a href="contact-page.html">Michala Baránková</a> 
-            2022. Designed by Michala Baránková
-
-        </p>
-    </div>
-<!-- <section></section> -->
 </body>
 </html>
