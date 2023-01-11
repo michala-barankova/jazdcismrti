@@ -6,8 +6,11 @@
 
 html,
 body {
-    height: 100%;
+    width: 100%;
     font-family: Garamond;
+    margin: 0 auto;
+    max-width: 1000px;
+    font-size: 100%;
 }
 
 ul {
@@ -25,10 +28,11 @@ body {
 header {
     background-color: #c0bfbf;
     padding: 5px 0;
+    width: 100%;
 }
 
 nav {
-    max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -43,6 +47,14 @@ nav {
     font-family: Garamond;
     margin-left: -150px;
 }
+
+.menu {
+    max-width: 100%;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+
 
 .menu>li,
 .menu>a {
@@ -70,7 +82,7 @@ nav {
 }
 
 .submenu {
-    position: absolute;
+    position: relative;
     background-color: #c0bfbf;
     width: 170px;
     left: 0;
@@ -125,7 +137,7 @@ nav {
 }
 
 .btn {
-    position: absolute;
+    position: relative;
 }
 
 .btn a {
@@ -225,11 +237,16 @@ nav {
 
 .main {
     width: 1130px;
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.main img {
+    width: 340px;
+    max-width: 100%;
 }
 
 .about-text h2 {
@@ -237,7 +254,7 @@ nav {
     font-size: 60px;
     text-transform: uppercase;
     margin-bottom: 20px;
-    max-width: 95%;
+    max-width: 100%;
 }
 
 .about-text h5 {
@@ -381,7 +398,7 @@ footer {
     right: 0;
     background: #c0bfbf;
     height: auto;
-    width: 99vw;
+    width: 100%;
     font-family: Garamond;
     padding-top: 40px;
     color: rgb(0, 0, 0);
@@ -396,9 +413,10 @@ footer {
 }
 
 .footer-content p {
-    max-width: 500px;
+    width: 500px;
+    max-width: 95%;
     margin: 5px auto;
-    line-height: 28px;
+    line-height: 50px;
     font-size: 40px;
     font-family: Charm;
 }
@@ -435,7 +453,7 @@ footer {
 
 .footer-bottom {
     background: #c0bfbf;
-    width: 99vw;
+    width: 100%;
     padding: 20px 0;
     text-align: center;
 }
@@ -452,6 +470,16 @@ footer {
     font-weight: 200;
 }
 
+.image2 img {
+    max-width: 100%;
+    height: auto;
+    width: 580px;
+}
+
+.image2 {
+    width: 580px;
+    max-width: 100%;
+}
 
 
 
@@ -461,29 +489,46 @@ footer {
 
 /* ****************************************MEDIA QUERIES SECTION ********************************************** */
 @media screen and (max-width: 1632px) {
-    .logo a {
+    .logo img {
         left: 0;
         top: 0;
-        width: 100%;
+        max-width: 100%;
         text-align: center;
         justify-content: center;
+
     }
 
     .logo {
         margin-left: 0;
+        flex-basis: 1;
     }
 
+    nav {
+        flex-basis: 1;
+    }
 
-}
-
-
-@media screen and (max-width: 1325px) {
     ul.menu {
         display: flex;
         width: 100%;
         justify-content: center;
         flex-wrap: nowrap;
     }
+
+    .content p {
+        max-width: 100%;
+    }
+
+    .footer,
+    .footer-content {
+        max-width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 1325px) {
+
+
 
     ul.menu>li,
     ul.menu a {
@@ -543,12 +588,58 @@ footer {
     }
 }
 
-@media screen and (max-width: 1150px) {
+
+@media (max-width: 948px) {
+    .logo {
+        flex-basis: 4;
+        min-width: 300px
+    }
+
+    nav {
+        flex-basis: 2;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    nav ul li,
+    nav ul li:hover {
+        border: none;
+    }
+
+    .content,
+    .about-text p,
+    .about-text h2,
+    .about-text h5 {
+        width: 100%;
+        max-width: 95%;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 0 auto;
+    }
+}
+
+/* 
+@media screen and (max-width: 1150px) and (min-width: 660px) {
     nav {
         display: flex;
         flex-direction: column;
     }
+} */
 
+@media screen and (max-width: 660px) {
+    nav {
+        max-width: 659px;
+        width: 100%;
+        position: relative;
+
+    }
+
+    ul.menu {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 
 
 }
@@ -558,12 +649,7 @@ footer {
         max-width: 100%;
     }
 
-    .content {
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-        max-width: 100%;
-    }
+
 
     .content h3,
     .content h4 {
@@ -586,7 +672,7 @@ footer {
     .about-text h2,
     .content h3,
     .content h4 {
-        width: 95%;
+        max-width: 95%;
         line-height: 60px;
     }
 
@@ -607,5 +693,53 @@ footer {
         display: block;
         text-align: center;
     }
+
+
 }
 
+@media screen and (max-width: 300px) {
+    .logo img {
+        width: 75%;
+        height: auto;
+    }
+
+    nav li,
+    .btn a,
+    .about-text h2,
+    .about-text h5,
+    .about-text p,
+    .content h3,
+    .content h4 {
+        font-size: 75%;
+        line-height: 20px;
+    }
+
+    .about-text h2 {
+        padding-top: 10px;
+    }
+
+    .about-text p {
+        margin: 0 auto;
+        margin-left: 0;
+        margin-right: 2px;
+        line-height: 32px;
+        font-size: 65%;
+        text-align: left;
+    }
+
+    .button {
+        width: 70%;
+        font-size: 75%;
+        white-space: nowrap;
+        height: 70%;
+    }
+
+    .footer-content p {
+        width: 500px;
+        max-width: 95%;
+        margin: 2px auto;
+        line-height: 30px;
+        font-size: 70%;
+        font-family: Charm;
+    }
+}
